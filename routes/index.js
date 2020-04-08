@@ -27,5 +27,11 @@ router.get('/times',  async function(req, res) { //show todo
   let time = await timeHandler.getTime({}, {sort: {created: -1}});
   res.json(time);
 });
+/* Delete time */
+router.get('/delete/:time',  async function(req, res) { //show todo
+  //console.log(req.params.time);
+  let time = await timeHandler.delTime({created: req.params.time}, {sort: {created: -1}});
+  return res.redirect('/time');
+});
 
 module.exports = router;

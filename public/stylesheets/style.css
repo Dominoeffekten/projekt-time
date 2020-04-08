@@ -85,8 +85,11 @@ tr p:not(.smallHeading){
 tr p:not(.delete){
     padding: 0 32px;
 }
-
 /* other */
 .smallHeading{
     font-weight: 900;
+}
+.delete{
+    text-decoration: none;
+    color: #000;
 }

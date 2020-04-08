@@ -15,10 +15,8 @@ const diff = function(someday){
     var later = new Date(someday); 
     var oneDay = 1000 * 60 * 60 * 24;// One day Time in ms (milliseconds) 
   
-    // To Calculate the result in milliseconds and then converting into days 
-    var result = Math.round(later.getTime() - today.getTime()) / (oneDay); 
-    // To remove the decimals from the (Result) resulting days value 
-    var diff = result.toFixed(0);
+    var result = Math.round(later.getTime() - today.getTime()) / (oneDay); // Result in milliseconds and then into days 
+    var diff = result.toFixed(0); //Resulting days value 
     return diff
 
     //console.log("today: " + today);

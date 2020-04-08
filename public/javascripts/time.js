@@ -30,7 +30,7 @@ const showTime = function (e) {
         let td = document.createElement("td");
 
         let lnk = document.createElement('a');                        // denne blok i stedet for
-        //lnk.setAttribute("href", "user/delete/"+todo.created);
+        lnk.setAttribute("href", "/delete/"+time.created);
         let delI = document.createTextNode("X");
         lnk.setAttribute("class", "delete");
         lnk.appendChild(delI);
