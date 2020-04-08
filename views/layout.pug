@@ -1,7 +1,19 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    head
+        title= 'My first site'
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(type='module' src=scriptLink)
+        script(src='https://kit.fontawesome.com/9f34627289.js')
+    body
+        header
+            nav
+                ul
+                    li
+                        a(href="/") Home
+                    li
+                        a(href="/time") Time
+        main
+            block all
+                h1= h1
+                    block content

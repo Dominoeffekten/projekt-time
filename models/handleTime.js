@@ -5,11 +5,10 @@ const dbServer = "localhost";
 const dbName = "user";
 
 exports.upsertTime = async function (req) {
-    let chk = { created: req.body.title };
+    let chk = { title: req.body.title };
     let toDo = new ToDo({
         userID: "rikke@mail.com",
         title: req.body.title,
-        text: req.body.text,
         deadline: new Date(req.body.deadline),
     });
     try { 

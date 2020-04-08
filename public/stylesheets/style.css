@@ -1,8 +1,92 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+* {
+    box-sizing: border-box;
+}
+header {
+    text-align: right;
+    width: 100%;
+    border: 0px solid red;
+}
+header nav ul {
+    list-style: none;
+    margin-right: 10px;
+    text-align: right;
+}
+header nav ul li {
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+main {
+    padding: 1em;
+}
+h2{
+    color: #D465E6;
+    text-align: center;
+}
+/* Form + input*/
+form {
+    width: 50%;
+    background: rgb(47,56,100);
+    background: radial-gradient(circle, rgba(47,56,100,1) 50%, rgba(24,31,74,1) 100%);
+    color: white;
+    margin: auto;
+    padding: 3% 7%;
+    margin-top: 3%;
+    box-shadow: 5px 5px 15px #cfcfcf;
+    border-radius: 10px;
+}
+form h2 {
+    font-size:21px;
+}
+form label {
+    font-size:15px;
+}
+input, select {
+    width: auto;
+    margin:5px 0;
+    border-radius: 3px;
+    font-size:14px;
+    border: none;
+    background-color: #4f5c87;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+input::placeholder {
+    color: white;
+}
+.go {
+    background-color: #f76bac;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+}
+/* tabel */
+table:not(#adminTable) {
+    padding: 16px;
+    float: left;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    box-shadow: #cfcfcf 5px 5px 15px;
+}
+tr p:not(.smallHeading){
+    margin-left: 13px;
+}
+tr p:not(.delete){
+    padding: 0 32px;
+}
 
-a {
-  color: #00B7FF;
+/* other */
+.smallHeading{
+    font-weight: 900;
 }

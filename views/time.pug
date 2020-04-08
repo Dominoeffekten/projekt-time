@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    form(action="/time" method="POST")
+        h2= "Make a day count"
+        label Title
+        br
+        input(type="text", name="title" placeholder="Title")
+        br
+        label Deadline
+        br
+        input(type="date", name="deadline" id="deadline" placeholder="Deadline")
+
+        br
+        input(type='submit' value='GO' class='go')
+
+    br
+    h2= "See what happens"
+    div#time
